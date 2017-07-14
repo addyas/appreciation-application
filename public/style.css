@@ -1,0 +1,165 @@
+/****** Main Styling ******/
+html,body{
+  margin: 0;
+  height: 100%;
+}
+
+body {
+	font-family: clarendon-text-pro, serif;
+  font-style: italic;
+  font-weight: 400;
+	color: #FFF;
+	
+	text-align: center;
+  
+  background: #ff6e7f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1{
+  font-size: 3em;
+  display: inline-block;
+  margin: 40px;
+  
+  /*text-shadow: -1px 0 #424242, 0 1px #424242, 1px 0 #424242, 0 -1px #424242;*/
+}
+
+.container {
+	padding: 0;
+	margin-top: 40px;
+}
+
+.footer {
+	margin-top: 60px;
+}
+
+ol {
+	list-style-position: inside;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #2574A9;
+}
+/****** Logo Div Styling ******/
+
+img {
+	margin: 20px auto 0 auto;
+	display: block;
+}
+
+.sidebar-nav {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+  
+  font-family: clarendon-text-pro, serif;
+font-style: normal;
+font-weight: 400;
+}
+
+.btn-large{
+  display: block;
+  background-color: rgba(255,255,255,0.3);
+  border: 4px solid #fff;
+  height: 60px;
+  width: 30%;
+  font-size: 24px;
+  margin: auto;
+  margin-bottom: 150px;
+  
+}
+
+
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-hang:hover, .hvr-hang:focus, .hvr-hang:active {
+  -webkit-animation-name: hvr-hang-sink, hvr-hang;
+  animation-name: hvr-hang-sink, hvr-hang;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+#main{
+   display: block;
+   border: 4px solid #fff;
+   background: rgba(0,0,0, 0.1);
+   height: 300px;
+   width: 500px;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+  margin-top: -150px;
+  margin-left: -250px;
+}
+
+#particles-js {
+  
+    width: 100%;
+    height: 99%;
+}

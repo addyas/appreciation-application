@@ -1,0 +1,19 @@
+extends index
+
+block content
+  div(class='container-fluid')
+    h1=title
+
+    form(method='POST' action='/appreciation')
+      div.form-group
+        label(for='personal_message') Your Note
+        textarea#personal_message.form-control(type='text', rows=10 placeholder='say whatever you feel, just end each sentence with a period.' name='personal_message' required='true' )
+      div.form-group
+        label(for='signature') Your Signature
+        input#signature.form-control(type='text', name='signature')
+      
+      button.btn-large(type='submit') Send
+    if errors 
+      ul
+        for error in errors
+          li!= error.msg
