@@ -1,2 +1,2 @@
-# Tentative Books Project 
-### MongoDB, Express, Jade, to be determined...
+# Appreciation Application
+### A small Express app to create animated web pages from letters written to loved ones.
