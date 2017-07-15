@@ -1,32 +1,33 @@
 extends index
 
 block content
-  h1=title
+  div(class='container-fluid')
+    h1=title
 
-  form(method='POST' action='/appreciation')
-    div.form-group
-      label(for='name') Name:
-      input#name.form-control(type='text', placeholder='Rick James III' name='name' required='true' value=(undefined===person ? '' : person.name) )
-      label(for='relation') What is their relationship to you?
-      select#relation.form-control(type='text', placeholder='Old Pal' name='relation' required='true' value=(undefined===author ? '' : author.family_name))
-        option Mom
-        option Dad
-        option Grandma
-        option Grandpa
-        option Parter
-        option Friend
-    div.form-group
-      label(for='vibe') How would you describe them?
-      select#vibe.form-control(type='date', name='vibe', value=(undefined===author ? '' : author.date_of_birth) )
-        option Easygoing
-        option Fun
-        option Lovely
-        option Driven
-        option Silly
-        option Cool
-    button.btn-large(type='submit') Submit
-  if errors 
-    ul
-      for error in errors
-        li!= error.msg
+    form(method='POST' action='/appreciation')
+      div.form-group
+        label(for='name') Name:
+        input#name.form-control(type='text', placeholder='Rick James III' name='name' required='true' value=(undefined===person ? '' : person.name) )
+        label(for='relation') What is their relationship to you?
+        select#relation.form-control(type='text', placeholder='Old Pal' name='relation' required='true' value=(undefined===author ? '' : author.family_name))
+          option Mom
+          option Dad
+          option Grandma
+          option Grandpa
+          option Partner
+          option Friend
+      div.form-group
+        label(for='vibe') How would you describe them?
+        select#vibe.form-control(type='date', name='vibe', value=(undefined===author ? '' : author.date_of_birth) )
+          option Easygoing
+          option Fun
+          option Lovely
+          option Driven
+          option Silly
+          option Cool
+      button.btn-large(type='submit') Submit
+    if errors 
+      ul
+        for error in errors
+          li!= error.msg
           

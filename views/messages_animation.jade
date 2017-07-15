@@ -1,0 +1,12 @@
+extends index
+
+block content
+  div(class='container-fluid')
+    h1 hey, your messages will be here shortly!
+    ul 
+      each val in message_list
+        li= val
+    h1= person_name
+    h3= person_relation
+    h5= person_vibe
+    
