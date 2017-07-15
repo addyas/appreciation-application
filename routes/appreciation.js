@@ -13,6 +13,8 @@ router.get('/', person_controller.index);
 router.post('/', person_controller.person_create_post);
 
 router.get('/:id/messages', message_controller.message_create_get);
+router.post('/:id/messages', message_controller.message_create_post);
+
 
 /* GET request for creating a Book. NOTE This must come before routes that display Book (uses id) */
 router.get('/book/create', book_controller.book_create_get);
