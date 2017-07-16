@@ -24,6 +24,24 @@ body {
   justify-content: center;
 }
 
+label{
+  font-style:normal;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+input[type=text], .form-control{
+  background-color: rgba(0,0,0,0.2);
+  border: 2px solid #FFFFFF;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+input[type=text]::placeholder, textarea.form-control::placeholder{
+  color: rgba(255,255,255,0.7);
+}
+
 h1{
   font-size: 3em;
   display: inline-block;
@@ -56,6 +74,17 @@ a {
 img {
 	margin: 20px auto 0 auto;
 	display: block;
+}
+
+.plain_large{
+  font-style: normal;
+  font-size: 24px;
+}
+
+.top_of_vp{
+  position: fixed;
+  top: 20px;
+  left: 10px;
 }
 
 .sidebar-nav {

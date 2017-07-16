@@ -89,7 +89,7 @@ $(function() {
     e.classList.add(randomElem(animations));
     
     var posx = (Math.random() * ($(document).width())).toFixed();
-    var posy = (Math.random() * ($(document).height())).toFixed();
+    var posy = (Math.random() *($(document).height())).toFixed();
     
     e.style.left = posx + 'px';
     e.style.top = posy + 'px';

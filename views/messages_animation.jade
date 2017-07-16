@@ -12,13 +12,10 @@ html(lang='en')
     link(rel='stylesheet', href='/public/style.css')
   body
     div(class='container-fluid')
-      h1 hey, your messages will be here shortly!
-      ul 
+      h1.top_of_vp hey, #{person_name}, you're a real #{person_vibe} #{person_relation}!
+      ul.plain_large 
         each val in message_list
           li= val
-      h1= person_name
-      h3= person_relation
-      h5= person_vibe
     
     
     

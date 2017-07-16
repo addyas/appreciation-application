@@ -4,7 +4,7 @@ var Person = require('../models/person');
 
 
 exports.message_create_get = function(req,res){
-  res.render('message_form', {title: 'howdy, message creation here'});
+  res.render('message_form', {title: 'Create your message below'});
 };
 
 exports.message_create_post = function(req, res, next){
@@ -21,8 +21,8 @@ exports.message_create_post = function(req, res, next){
   Person.findById(person_id, function(err, person){
      if(err) {throw err;}
      returnPerson.name = person.name;
-     returnPerson.relation = person.relation;
-     returnPerson.vibe = person.vibe;
+     returnPerson.relation = person.relation.toLowerCase();
+     returnPerson.vibe = person.vibe.toLowerCase();
      console.log(returnPerson.name,returnPerson.relation, returnPerson.vibe);
   });
   

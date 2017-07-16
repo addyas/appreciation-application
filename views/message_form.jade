@@ -7,7 +7,7 @@ block content
     form(method='POST' action='')
       div.form-group
         label(for='custom_messages') Your Note
-        textarea#custom_messages.form-control(type='text', rows=10 placeholder='say whatever you feel, just end each sentence with a period.' name='custom_messages' required='true' )
+        textarea#custom_messages.form-control(type='text', rows=10, placeholder='say whatever you feel, just end each sentence with a period. Seriously, I have not done error handling on this form yet :)', name='custom_messages' required='true' )
       div.form-group
         label(for='signature') Your Signature
         input#signature.form-control(type='text', name='signature')
